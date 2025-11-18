@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "About me",
+    "education": "Education",
+    "tools": "Technical skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "welcome": "Welcome, I'm Martina Pérez",
+    "subtitle": "Information Specialist & Web Developer",
+    "description": "I transform information and real needs into clear, accessible and well-structured digital solutions"
+  },
+
+  "about": {
+    "title": "About me",
+    "text": "I am a web developer and information specialist, with a strong interest in information organization, accessibility and the creation of useful digital solutions",
+    "valuesTitle": "Personal values"
+  },
+
+  "values": {
+    "attentive": "Attentive",
+    "curious": "Curious",
+    "perseverant": "Perseverant",
+    "responsible": "Responsible"
+  },
+
+  "education": {
+    "title": "Education",
+    "degree1": {
+      "title": "Degree in Information and Documentation",
+      "place": "University of Granada",
+      "year": "2020 – 2024"
+    },
+    "degree2": {
+      "title": "Higher Degree in Web Application Development",
+      "place": "FOC Institute",
+      "year": "2024 – 2026"
+    },
+    "degree3": {
+      "title": "Professional internship",
+      "place": "NTT DATA",
+      "year": "2025"
+    }
+  },
+
+  "tools": {
+    "title": "Technical skills",
+    "description": "Technologies and tools I work with",
+    "additionalTitle": "Additional tools"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "finalTitle": "Final DAW Project",
+    "inProgress": "In development",
+    "progress": "Progress",
+    "soon": "Coming soon…"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "description": "If you would like to get in touch, feel free to send me a message",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message"
+  }
+}

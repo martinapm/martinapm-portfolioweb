@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b18f8f; /* cerezaLight */
+    color: #3b0808; /* cerezaDark */
+    font-family: 'Alta', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    @apply font-sans;
+}
+
+a {
+    text-decoration: none;
+}
+/* FLIP CARD */
+.perspective {
+    perspective: 1000px;
+}
+
+.flip-card {
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    backface-visibility: hidden;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}

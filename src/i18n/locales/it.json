@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "Su di me",
+    "education": "Formazione",
+    "tools": "Competenze tecniche",
+    "projects": "Progetti",
+    "contact": "Contatto"
+  },
+
+  "home": {
+    "welcome": "Benvenuti, sono Martina Pérez",
+    "subtitle": "Documentalista e Sviluppatrice Web",
+    "description": "Trasformo informazioni ed esigenze reali in soluzioni digitali chiare, accessibili e ben strutturate"
+  },
+
+  "about": {
+    "title": "Su di me",
+    "text": "Sono una sviluppatrice web e documentalista, con un forte interesse per l’organizzazione dell’informazione, l’accessibilità e la creazione di soluzioni digitali utili",
+    "valuesTitle": "Valori personali"
+  },
+
+  "values": {
+    "attentive": "Attenta",
+    "curious": "Curiosa",
+    "perseverant": "Perseverante",
+    "responsible": "Responsabile"
+  },
+
+  "education": {
+    "title": "Formazione",
+    "degree1": {
+      "title": "Laurea in Informazione e Documentazione",
+      "place": "Università di Granada",
+      "year": "2020 – 2024"
+    },
+    "degree2": {
+      "title": "Diploma superiore in Sviluppo di Applicazioni Web",
+      "place": "Istituto FOC",
+      "year": "2024 – 2026"
+    },
+    "degree3": {
+      "title": "Tirocinio professionale",
+      "place": "NTT DATA",
+      "year": "2025"
+    }
+  },
+
+  "tools": {
+    "title": "Competenze tecniche",
+    "description": "Tecnologie e strumenti con cui lavoro",
+    "additionalTitle": "Strumenti aggiuntivi"
+  },
+
+  "projects": {
+    "title": "Progetti",
+    "finalTitle": "Progetto finale DAW",
+    "inProgress": "In sviluppo",
+    "progress": "Avanzamento",
+    "soon": "Prossimamente…"
+  },
+
+  "contact": {
+    "title": "Contatto",
+    "description": "Se desideri contattarmi, inviami un messaggio",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia messaggio"
+  }
+}
