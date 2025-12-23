@@ -62,10 +62,14 @@
 
   "contact": {
     "title": "Contacto",
-    "description": "Si deseas ponerte en contacto conmigo, envíame un mensaje",
+    "description": "Si deseas ponerte en contacto conmigo, envíame un mensaje.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "message": "Mensaje",
-    "send": "Enviar mensaje"
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "successTitle": "¡Mensaje enviado!",
+    "successMessage": "Gracias por contactar conmigo. Te responderé lo antes posible."
   }
+
 }
