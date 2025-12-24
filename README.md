@@ -1,73 +1,80 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio Web Personal — Martina Pérez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio web personal desarrollado con **React + TypeScript**, diseñado para presentar mi perfil académico y profesional de forma clara, accesible y visualmente cuidada.
 
-Currently, two official plugins are available:
+El proyecto está enfocado en buenas prácticas de desarrollo frontend, diseño responsive, internacionalización y despliegue en producción.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Demo online:**  
+https://martinapm-portfolioweb.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Descripción del proyecto
 
-## Expanding the ESLint configuration
+Este portfolio ha sido desarrollado como proyecto personal con el objetivo de:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Mostrar mi perfil profesional como **Documentalista y Desarrolladora Web**
+- Centralizar información académica, técnica y de contacto
+- Aplicar conocimientos reales de desarrollo frontend en un proyecto completo
+- Servir como base escalable para futuros proyectos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Incluye animaciones suaves, diseño responsive, soporte multilingüe y un formulario de contacto funcional.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tecnologías utilizadas
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+### Internacionalización
+- react-i18next
+
+### Formularios
+- Formspree
+
+### Control de versiones y despliegue
+- Git
+- GitHub
+- Vercel
+
+### Diseño y recursos
+- Google Fonts (Alata)
+- Skillicons.dev
+
+---
+
+## 🧩 Funcionalidades principales
+
+- Diseño **responsive** (desktop y móvil)
+- Menú de navegación con **scroll suave**
+- **Internacionalización** (ES / EN / IT)
+- Sección de formación con visualización tipo línea temporal
+- Skills técnicas con iconos y microinteracciones
+- Sección de proyectos con indicador de progreso
+- Formulario de contacto funcional
+- Despliegue automático en producción
+
+---
+
+## 📂 Estructura del proyecto
+
+```text
+src/
+│
+├── components/       # Componentes reutilizables
+├── pages/            # Secciones principales del portfolio
+├── locales/          # Traducciones (ES / EN / IT)
+├── assets/           # Imágenes y recursos
+├── styles/           # Estilos globales
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Instalación y ejecución local
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
