@@ -125,6 +125,12 @@ El código puede servir como referencia, pero no está destinado a redistribuci�
 ## 👩‍💻 Autora
 
 **Martina Pérez**
-Documentalista y Desarrolladora Web
+<br>Documentalista y Desarrolladora Web<br>
+
+---
+
+<p align="center">
+  ✨<i>“MPM”</i>✨
+</p>
 
 
