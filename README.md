@@ -78,3 +78,53 @@ src/
 
 ## 🚀 Instalación y ejecución local
 
+1.Clonar el repositorio:
+```bash
+git clone https://github.com/tu-usuario/tu-repositorio.git
+```
+
+2. Acceder al proyecto:
+```bash
+cd martinapm-portfolioweb
+```
+
+3. Instalar dependencias:
+```bash
+npm install
+```
+
+4. Ejecutar en entorno de desarrollo:
+```bash
+npm run dev
+```
+
+El proyecto se abrirá en ```http://localhost:5173```
+
+---
+
+## 🌍 Despliegue
+
+El proyecto está desplegado en **Vercel** mediante integración continua con GitHub.
+Cada cambio en la rama principal genera automáticamente una nueva versión en producción.
+
+---
+
+## ✉️ Contacto
+
+El formulario de contacto está integrado con **Formspree**, permitiendo el envío directo de mensajes por correo electrónico sin necesidad de backend propio.
+
+---
+
+## 📄 Licencia
+
+Proyecto de uso personal y profesional.
+El código puede servir como referencia, pero no está destinado a redistribución comercial.
+
+---
+
+## 👩‍💻 Autora
+
+**Martina Pérez**
+Documentalista y Desarrolladora Web
+
+
