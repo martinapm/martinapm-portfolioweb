@@ -11,7 +11,13 @@ const Navbar = () => {
         "cursor-pointer px-3 text-xl whitespace-nowrap transition-colors duration-300 hover:text-[#550000]";
 
     return (
-        <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/70 border-b border-white/10">
+        <nav
+            className="
+                fixed top-0 w-full z-50
+                backdrop-blur-md
+                bg-transparent
+            "
+        >
             <div className="w-full flex items-center px-10 py-6 font-heading">
 
                 {/* IZQUIERDA */}
@@ -31,31 +37,31 @@ const Navbar = () => {
                     <LanguageSwitcher />
                 </div>
 
-                {/* DERECHA (DESKTOP) */}
+                {/* DERECHA (SECCIONES - DESKTOP) */}
                 <div className="hidden md:flex justify-end flex-1 items-center gap-6">
                     <ScrollLink to="about" smooth duration={500} className={item}>
                         {t("nav.about")}
                     </ScrollLink>
 
-                    <span className="text-gray-500">|</span>
+                    <span className="text-white/40">|</span>
 
                     <ScrollLink to="education" smooth duration={500} className={item}>
                         {t("nav.education")}
                     </ScrollLink>
 
-                    <span className="text-gray-500">|</span>
+                    <span className="text-white/40">|</span>
 
                     <ScrollLink to="tools" smooth duration={500} className={item}>
                         {t("nav.tools")}
                     </ScrollLink>
 
-                    <span className="text-gray-500">|</span>
+                    <span className="text-white/40">|</span>
 
                     <ScrollLink to="projects" smooth duration={500} className={item}>
                         {t("nav.projects")}
                     </ScrollLink>
 
-                    <span className="text-gray-500">|</span>
+                    <span className="text-white/40">|</span>
 
                     <ScrollLink to="contact" smooth duration={500} className={item}>
                         {t("nav.contact")}
@@ -73,30 +79,24 @@ const Navbar = () => {
 
             {/* MENÚ MÓVIL */}
             {open && (
-                <div className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 px-8 py-10 space-y-8 text-center">
-
-                    {/* IDIOMAS */}
+                <div className="md:hidden bg-black/90 backdrop-blur-xl px-8 py-10 space-y-8 text-center">
                     <div className="flex justify-center">
                         <LanguageSwitcher />
                     </div>
 
-                    {/* SECCIONES */}
                     <div className="flex flex-col gap-6">
-                        <ScrollLink to="about" smooth duration={500} onClick={() => setOpen(false)} className="text-2xl whitespace-nowrap hover:text-[#550000]">
-                            {t("nav.about")}
-                        </ScrollLink>
-                        <ScrollLink to="education" smooth duration={500} onClick={() => setOpen(false)} className="text-2xl whitespace-nowrap hover:text-[#550000]">
-                            {t("nav.education")}
-                        </ScrollLink>
-                        <ScrollLink to="tools" smooth duration={500} onClick={() => setOpen(false)} className="text-2xl whitespace-nowrap hover:text-[#550000]">
-                            {t("nav.tools")}
-                        </ScrollLink>
-                        <ScrollLink to="projects" smooth duration={500} onClick={() => setOpen(false)} className="text-2xl whitespace-nowrap hover:text-[#550000]">
-                            {t("nav.projects")}
-                        </ScrollLink>
-                        <ScrollLink to="contact" smooth duration={500} onClick={() => setOpen(false)} className="text-2xl whitespace-nowrap hover:text-[#550000]">
-                            {t("nav.contact")}
-                        </ScrollLink>
+                        {["about", "education", "tools", "projects", "contact"].map((section) => (
+                            <ScrollLink
+                                key={section}
+                                to={section}
+                                smooth
+                                duration={500}
+                                onClick={() => setOpen(false)}
+                                className="text-2xl whitespace-nowrap hover:text-[#550000]"
+                            >
+                                {t(`nav.${section}`)}
+                            </ScrollLink>
+                        ))}
                     </div>
                 </div>
             )}

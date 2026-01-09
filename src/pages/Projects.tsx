@@ -31,7 +31,7 @@ const Projects = () => {
                         <div>
                             <p className="text-sm text-gray-400 mb-2">
                                 {t("projects.progress")} —{" "}
-                                <span className="font-semibold text-white">3%</span>
+                                <span className="font-semibold text-white">1%</span>
                             </p>
 
                             <div className="w-full bg-gray-700 h-3 rounded-full mb-4">
